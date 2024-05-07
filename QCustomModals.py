@@ -59,6 +59,7 @@ class QCustomModals:
             # get default icon:
             self.closeIcon = self.style().standardIcon(QStyle.SP_TitleBarCloseButton).pixmap(QSize(32, 32))
             self.closeButton.setIcon(QIcon(self.closeIcon))
+            # self.closeButton.setIcon(QIcon('./cross.png'))
             
             # Get the info icon from the style
             self.infoIcon = self.style().standardIcon(QStyle.SP_MessageBoxInformation).pixmap(QSize(32, 32))
