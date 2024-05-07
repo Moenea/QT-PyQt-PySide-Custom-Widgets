@@ -1,8 +1,8 @@
 import sys
 from functools import partial
-from PySide6.QtCore import Qt, QSize
-from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QWidget, QScrollArea, QGraphicsDropShadowEffect, QStyle
-from PySide6.QtGui import QColor, QPalette
+from PyQt5.QtCore import Qt, QSize
+from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QWidget, QScrollArea, QGraphicsDropShadowEffect, QStyle
+from PyQt5.QtGui import QColor, QPalette
 from Custom_Widgets.QCustomModals import QCustomModals
 
 class TestModalWindow(QMainWindow):

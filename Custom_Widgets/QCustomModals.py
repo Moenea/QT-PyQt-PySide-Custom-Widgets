@@ -1,9 +1,13 @@
 import weakref
 
-from qtpy.QtGui import QPaintEvent, QPainter, QIcon, QPalette, QPixmap
-from qtpy.QtCore import Qt, QPoint, QSize, QEvent, QTimer, QPropertyAnimation, QParallelAnimationGroup, QEasingCurve, QObject, Signal
-from qtpy.QtWidgets import QStyleOption, QWidget, QStyle, QGraphicsOpacityEffect, QApplication
+# from PyQt5.QtGui import QPaintEvent, QPainter, QIcon, QPalette, QPixmap
+# from PyQt5.QtCore import Qt, QPoint, QSize, QEvent, QTimer, QPropertyAnimation, QParallelAnimationGroup, QEasingCurve, QObject
+# from PyQt5.QtWidgets import QStyleOption, QWidget, QStyle, QGraphicsOpacityEffect, QApplication
 from Custom_Widgets.components.python.ui_info import Ui_Form
+
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
 
 class LoadForm(QWidget):
     def __init__(self, form):
@@ -26,7 +30,7 @@ class QCustomModals:
         margin = 24
         spacing = 16
         
-        closedSignal = Signal()
+        closedSignal = pyqtSignal()
         
         commonStyle = ("""
                 * {
@@ -54,7 +58,7 @@ class QCustomModals:
             
             # get default icon:
             self.closeIcon = self.style().standardIcon(QStyle.SP_TitleBarCloseButton).pixmap(QSize(32, 32))
-            self.closeButton.setIcon(self.closeIcon)
+            self.closeButton.setIcon(QIcon(self.closeIcon))
             
             # Get the info icon from the style
             self.infoIcon = self.style().standardIcon(QStyle.SP_MessageBoxInformation).pixmap(QSize(32, 32))

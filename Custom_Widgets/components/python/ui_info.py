@@ -8,14 +8,14 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from qtpy.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+from PyQt5.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
-from qtpy.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+from PyQt5.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from qtpy.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
+from PyQt5.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QPushButton, QSizePolicy, QVBoxLayout, QWidget)
 
 class Ui_Form(object):

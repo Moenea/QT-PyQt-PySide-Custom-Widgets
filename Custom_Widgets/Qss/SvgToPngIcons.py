@@ -32,7 +32,7 @@ from qtpy.QtCore import *
 
 from Custom_Widgets.Log import *
 
-from PySide6.QtGui import QColor
+from PyQt5.QtGui import QColor
 
 class NewIconsGenerator(QObject):
     def __init__(self, arg):
